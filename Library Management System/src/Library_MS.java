@@ -15,8 +15,10 @@ class Book {
     }
 }
 
-public class Library_MS {    
-    public static void main(String[] args) {
+public class Library_MS 
+{    
+    public static void main(String[] args) 
+    {
         ArrayList<Book> books = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         int choice;
@@ -31,7 +33,8 @@ public class Library_MS {
         choice = sc.nextInt();
         sc.nextLine();
 
-        switch (choice) {
+        switch (choice) 
+        {
             case 1:
                 
                 System.out.println("Enter the name of the book");
@@ -52,22 +55,27 @@ public class Library_MS {
 
                 System.out.println("Enter the ID of the book to be issued");
                 int n = sc.nextInt();
-                for (Book book : books) {
-                    if (book.ID == n) {
-                        if (book.issued == false) {
+                for (Book book : books) 
+                {
+                    if (book.ID == n) 
+                    {
+                        if (book.issued == false)
+                        {
                             book.issued = true;
                             System.out.println("Book issued successfully");
                             found = true;
                             break;
                         } 
-                        else {
+                        else 
+                        {
                             System.out.println("Book is already issued");
                             break;
                         }
                     }
 
                 }
-                if (!found) {
+                if (!found)
+                {
                     System.out.println("Book not found");
                 }
                 System.out.println("--------------------");
@@ -80,21 +88,26 @@ public class Library_MS {
 
                     System.out.println("Enter the ID of the book to be Returned");
                     int p = sc.nextInt();
-                    for (Book book : books) {
-                        if (book.ID == p) {
-                            if (book.issued == true) {
+                    for (Book book : books) 
+                    {
+                        if (book.ID == p) 
+                        {
+                            if (book.issued == true) 
+                            {
                                 book.issued = false;                     
                                 System.out.println("Book Returned successfully");
                                 found1 = true;
                                 break;
-                            } else {
+                            } else 
+                            {
                                 System.out.println("Book is not issued");
                                 break;
                             }
                         }
                         
                     }
-                    if (!found1) {
+                    if (!found1) 
+                    {
                         System.out.println("Book not found");
                     }
                     System.out.println("--------------------");
