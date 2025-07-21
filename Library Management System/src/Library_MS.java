@@ -6,7 +6,8 @@ class Book {
     String author;
     int ID;
     boolean issued;
-    Book(String name, String author, int ID, boolean issued) {
+    Book(String name, String author, int ID, boolean issued) 
+    {
         this.name = name;
         this.author = author;
         this.ID = ID;
