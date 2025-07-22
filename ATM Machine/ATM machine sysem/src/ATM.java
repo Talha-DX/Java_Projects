@@ -8,28 +8,29 @@ class Creat_Acc {
     int Pass;
     boolean f;
 
-    Creat_Acc(double Amount) {
+    Creat_Acc(double Amount) 
+    {
         this.Amount = Amount;
     }
 
     Scanner sp = new Scanner(System.in);
 
-    void Acc() {
+    void Acc() 
+    {
 
-        if (!f) {
+        if (!f) 
+        {
 
             System.out.println("Your Name:");
             this.name = sp.nextLine();
-            // sp.nextLine();
             System.out.println("Your CNIC:");
             this.CNIC = sp.nextInt();
-            // System.out.println("Amount of Cash:");
-            // this.Amount = sp.nextDouble();
             System.out.println("Set Password:");
             this.Pass = sp.nextInt();
             f = true;
 
-        } else {
+        } else 
+        {
             System.out.print("Your Already Have Account");
 
         }
