@@ -64,7 +64,8 @@ class Creat_Acc {
    
 }
 
-public class ATM {
+public class ATM 
+{
     public static void main(String[] args) {
 
         int i;
