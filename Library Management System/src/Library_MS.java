@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 class Book 
+
 {
     String name;
     String author;
