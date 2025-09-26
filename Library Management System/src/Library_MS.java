@@ -1,7 +1,8 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-class Book {
+class Book 
+{
     String name;
     String author;
     int ID;
